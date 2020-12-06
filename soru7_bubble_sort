@@ -1,0 +1,9 @@
+def bubble_sort(dizi): #Fonksiyon tanımladım
+    for i in range(len(dizi)-1): #Diziyi dolaşan döngü
+        for j in range(len(dizi)-1-i): #En büyük eleman her döngüde en sonda yerine yerleştiği için i çıkardım
+            if dizi[j]>dizi[j+1]: 
+                dizi[j], dizi[j+1]=dizi[j+1], dizi[j]
+
+siralanmamis_dizi=[3,5,-6,19,-4,28] #Fonksiyonu kod içinde çağırmak için bir örnek
+bubble_sort(siralanmamis_dizi)
+print(siralanmamis_dizi)
