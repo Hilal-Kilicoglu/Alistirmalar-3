@@ -1,0 +1,13 @@
+def stupid_sort(dizi):
+    i=0 
+    while i<len(dizi): #Diziyi dolaşan döngü
+        if i!=0 and dizi[i]<dizi[i-1]: #i indisli elemanın solundaki eleman ondan büyükse 
+            dizi[i], dizi[i-1]=dizi[i-1], dizi[i] #yer değiştiriyorlar
+            i=0 #değilse baştan başlıyor
+        else:
+            i+=1 #Değilse bir adım sonrasından devam ediyor
+    return dizi
+
+siralanmamis_dizi=[9,3,-1,15,-8,7] #Fonksiyonu kod içinde çağırmak için bir örnek
+stupid_sort(siralanmamis_dizi)
+print(siralanmamis_dizi)
