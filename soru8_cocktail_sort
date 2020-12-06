@@ -1,0 +1,17 @@
+def cocktail_sort(dizi):
+    sol=0
+    sağ=len(dizi)-1
+    while sol<=sağ:
+        for i in range(sol,sağ,+1):
+            if dizi[i]>dizi[i+1]:
+                dizi[i], dizi[i+1]=dizi[i+1], dizi[i]
+        sağ-=1
+        for j in range(sağ, sol,-1):
+            if dizi[j-1]>dizi[j]:
+                dizi[j], dizi[j-1]=dizi[j-1], dizi[j]
+        sol+=1
+    return dizi
+
+siralanmamis_dizi=[3,9,-5,18,2,-6]
+cocktail_sort(siralanmamis_dizi)
+print(siralanmamis_dizi)
