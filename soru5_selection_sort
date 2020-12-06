@@ -1,5 +1,5 @@
 def selection_sort(dizi): #Fonksiyon tanımladım
-    for i in range(len(dizi)): #Dizinin tüm elemanlarını dolşan bir döngü
+    for i in range(len(dizi)): #Dizinin tüm elemanlarını dolaşan bir döngü
         min_indis=i #Üzerinde bulunduğu indisi minmum kabul ediyor
         for j in range(i+1, len(dizi)): #Dizinin diğer elemanlarını dolaşan döngü
             if dizi[min_indis]>dizi[j]: #Eğer üzerinde bulunduğu sayı minimumdan küçükse
