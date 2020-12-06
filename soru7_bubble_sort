@@ -1,4 +1,4 @@
-def bubble_sort(dizi): #Fonksiyon tanımladım
+def bubble_sort(dizi): 
     for i in range(len(dizi)-1): #Diziyi dolaşan döngü
         for j in range(len(dizi)-1-i): #En büyük eleman her döngüde en sonda yerine yerleştiği için i çıkardım
             if dizi[j]>dizi[j+1]: 
