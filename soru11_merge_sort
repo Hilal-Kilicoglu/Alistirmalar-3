@@ -1,0 +1,32 @@
+def merge(dizi):
+    if len(dizi)>1:
+        orta=len(dizi)//2
+        soldizi=dizi[:orta]
+        sağdizi=dizi[orta:]
+        merge(soldizi)
+        merge(sağdizi)
+        merge_sort(dizi, soldizi, sağdizi)
+def merge_sort(dizi, soldizi, sağdizi):
+    i=0
+    j=0
+    k=0
+    while i<len(soldizi) and j<len(sağdizi):
+        if soldizi[i]<sağdizi[j]:
+            dizi[k]=soldizi[i]
+            i=i+1
+        else:
+            dizi[k]=sağdizi[j]
+            j=j+1
+        k=k+1
+    while i<len(soldizi):
+        dizi[k]=soldizi[i]
+        i=i+1
+        k=k+1
+    while j<len(sağdizi):
+        dizi[k]=sağdizi[j]
+        j=j+1
+        k=k+1
+
+siralanmamis_dizi=[5,9,-2,14,7,-11,20]
+merge(siralanmamis_dizi)
+print(siralanmamis_dizi)
