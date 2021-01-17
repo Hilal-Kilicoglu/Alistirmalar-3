@@ -1,0 +1,32 @@
+def Sirali2DiziyiBirlestir(a,b):
+    m=0
+    n=0
+    d=[]
+    while m<len(a) and n<len(b):
+        if a[m]<b[n]:
+            d.append(a[m])
+            if m<len(a):
+                m=m+1
+        else:
+            d.append(b[n])
+            if n<len(b):
+                n=n+1
+    if m==len(a):
+        d=d+b[n:len(b)]
+    if n==len(b):
+        d=d+a[m:len(a)]
+    return d
+
+def merge_sort(a):
+    if len(a)<=1:
+        return a
+    else:
+        k=int(len(a)/2)
+        b=a[0:k]
+        c=a[k:len(a)]
+        b=merge_sort(b)
+        c=merge_sort(c)
+        return Sirali2DiziyiBirlestir(b,c)
+
+siralanmamis_dizi=[5,9,-2,14,7,-11,20]
+print(merge_sort(siralanmamis_dizi))
