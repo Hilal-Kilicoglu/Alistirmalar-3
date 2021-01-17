@@ -13,5 +13,4 @@ def cocktail_sort(dizi):
     return dizi
 
 siralanmamis_dizi=[3,9,-5,18,2,-6]
-cocktail_sort(siralanmamis_dizi)
-print(siralanmamis_dizi)
+print(cocktail_sort(siralanmamis_dizi))
