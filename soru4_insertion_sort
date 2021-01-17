@@ -8,5 +8,4 @@ f insertion_sort(dizi):
             dizi[j+1]=k
 
 siralanmamis_dizi=[2,6,-4,17,-13,9] #Fonksiyonu kod içinde çağırmak için bir örnek
-insertion_sort(siralanmamis_dizi)
-print(siralanmamis_dizi)
+print(insertion_sort(siralanmamis_dizi))
