@@ -8,5 +8,4 @@ def selection_sort(dizi):
                 (dizi[min_indis], dizi[i])=(dizi[i], dizi[min_indis]) #yer değiştirme
                 
 siralanmamis_dizi=[2,5,-3,9,-8] #Fonksiyonu kod içinde çağırmak için bir örnek
-selection_sort(siralanmamis_dizi)
-print(siralanmamis_dizi)
+print(selection_sort(siralanmamis_dizi))
