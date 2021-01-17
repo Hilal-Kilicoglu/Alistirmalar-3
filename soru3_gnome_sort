@@ -9,5 +9,4 @@ def gnome_sort(dizi):
     return dizi
 
 siralanmamis_dizi=[9,3,-1,15,-8,7] #Fonksiyonu kod içinde çağırmak için bir örnek
-gnome_sort(siralanmamis_dizi)
-print(siralanmamis_dizi)
+print(gnome_sort(siralanmamis_dizi))
