@@ -1,8 +1,8 @@
-def quick_sort(dizi):
+def quick_sort(dizi):  #Derste işlenen algoritmalar içinde en iyisi ve en çok kullanılanı
     if len(dizi)<=1:
         return dizi
     else:
-        k=int(len(dizi)/2)
+        k=int(len(dizi)/2) #eğer dizi çift sayıda elemana sahipse pivot en yakın sayıya yuvarlanacak
         b=[]
         c=[]
         for i in range(0, len(dizi)):
@@ -11,7 +11,7 @@ def quick_sort(dizi):
             else:
                 if dizi[i]>dizi[k]:
                     c.append(dizi[i])
-        return quick_sort(b)+[dizi[k]]+quick_sort(c)
+        return quick_sort(b)+[dizi[k]]+quick_sort(c) #rekürsik yapı
 
 siralanmamis_dizi=[10,6,-3,8,15,-7,4]
 print(quick_sort(siralanmamis_dizi))
