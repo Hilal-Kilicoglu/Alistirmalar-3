@@ -5,5 +5,4 @@ def bubble_sort(dizi):
                 (dizi[j], dizi[j+1])=(dizi[j+1], dizi[j])  #yer değiştirme
 
 siralanmamis_dizi=[3,5,-6,19,-4,28] #Fonksiyonu kod içinde çağırmak için bir örnek
-bubble_sort(siralanmamis_dizi)
-print(siralanmamis_dizi)
+print(bubble_sort(siralanmamis_dizi))
