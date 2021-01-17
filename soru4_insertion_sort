@@ -1,11 +1,11 @@
 f insertion_sort(dizi):
     for i in range(1, len(dizi)): #Döngü 1'den başlıyor çünkü 0 indisli sayı sıralı kabul ediliyor
-        key=dizi[i]
+        k=dizi[i]
         j=i-1 #i'nin solunda yer alan sayı
-        while j>=0 and key<dizi[j]:
+        while j>=0 and k<dizi[j]:
             dizi[j+1]=dizi[j] #Dizi üzerinde sağa kaydırma
             j=j-1 
-            dizi[j+1]=key
+            dizi[j+1]=k
 
 siralanmamis_dizi=[2,6,-4,17,-13,9] #Fonksiyonu kod içinde çağırmak için bir örnek
 insertion_sort(siralanmamis_dizi)
